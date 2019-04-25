@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableRow
+        android:id="@+id/wiersz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fajny">
+
+        <TextView
+            android:id="@+id/etykieta5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/producent"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/etykieta6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="@string/model"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/etykieta7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="@string/wersja"
+            android:textSize="20sp" />
+    </TableRow>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/wiersz"
+        android:layout_marginTop="45dp" />
+
+</RelativeLayout>
